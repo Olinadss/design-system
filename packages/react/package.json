@@ -6,16 +6,18 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "@design-system-ui/ts-config": "*",
+    "@design-system-ui/eslint-config": "*",
     "@design-system-ui/tokens": "*",
+    "@design-system-ui/ts-config": "*",
     "tsup": "^8.2.4",
-    "typescript": "^5.5.4"
+    "typescript": "^5.4.0"
   }
 }
